@@ -9,17 +9,17 @@ class Employee extends Model
 {
 
     protected $table='employees';
-    protected $dataFormat='u';
+    //protected $dataFormat='u';
 
-const CREATED_AT = 'employess_date';
-const UPDATED_AT = 'employess_lastdate';
+const CREATED_AT = 'creation_date';
+const UPDATED_AT = 'last_update';
 
 
 
 
 protected $fillable =[
-    'lastName',
-    'firstName',
+    'last_name',
+    'first_name',
     'extension',
     'email',
     'office_code',
