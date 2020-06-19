@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class oderdetail extends Model
+class Oderdetail extends Model
 {
     protected $table ='oderdetails';
 

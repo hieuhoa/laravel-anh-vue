@@ -11,8 +11,8 @@ class Customer extends Model
 
 
 
-const CREATED_AT = 'customers_date';
-const UPDATED_AT = 'customers_lastdate';
+//const CREATED_AT = 'customers_date';
+//const UPDATED_AT = 'customers_lastdate';
 
 protected $fillable =[
     'customersName',

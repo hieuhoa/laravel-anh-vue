@@ -10,8 +10,8 @@ class Employee extends Model
     protected $dataFormat='';
 
 
-const CREATED_AT = 'employess_date';
-const UPDATED_AT = 'employess_lastdate';
+//const CREATED_AT = 'employess_date';
+//const UPDATED_AT = 'employess_lastdate';
 
 
 
