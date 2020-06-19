@@ -15,13 +15,13 @@ class CreateOdersTable extends Migration
     {
         Schema::create('oders', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('orderNumber')->unique();
-            $table->date('orderDate');
-            $table->date('requiredDate');
-            $table->date('shippedDate');
+            $table->integer('order_number')->unique();
+            $table->date('order_date');
+            $table->date('required_date');
+            $table->date('shipped_date');
             $table->string('status',50);
             $table->string('comments',50);
-            $table->string('customerNumber');
+            $table->string('customer_number');
             $table->timestamps();
         });
     }

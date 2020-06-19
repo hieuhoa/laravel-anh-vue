@@ -15,17 +15,17 @@ class CreateOfficesTable extends Migration
     {
         Schema::create('customers', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('customerName',50)->unique();
-            $table->string('customerLastName',50);
-            $table->string('customerFirstName',50);
+            $table->string('customer_name',50)->unique();
+            $table->string('customer_lastName',50);
+            $table->string('customer_firstName',50);
             $table->string('phone',50);
-            $table->string('addressLine1',50);
-            $table->string('addressLine2',50);
+            $table->string('address_line1',50);
+            $table->string('address_line2',50);
             $table->string('state',100);
-            $table->string('postalCode',50);
+            $table->string('postal_code',50);
             $table->string('country',100);
-            $table->string('salesRepEmployeeNumber',50);
-            $table->string('creditLimit',50);
+            $table->string('salesRep_employeeNumber',50);
+            $table->string('credit_limit',50);
             $table->timestamps();
         });
     }

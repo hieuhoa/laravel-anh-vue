@@ -15,10 +15,10 @@ class CreateOderdetailsTable extends Migration
     {
         Schema::create('oderdetails', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('orderNumber')->unique();
-            $table->string('quantilyOdered',50);
-            $table->integer('priceEach');
-            $table->string('orderLineNumber');
+            $table->string('order_number')->unique();
+            $table->string('quantily_odered',50);
+            $table->integer('price_each');
+            $table->string('orderline_number');
             $table->timestamps();
         });
     }

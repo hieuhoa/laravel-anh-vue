@@ -14,7 +14,7 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('productlines', function (Blueprint $table) {
-            $table->increments('productlines');
+            $table->increments('product_lines');
             $table->string('textDescription');
             $table->string('htmlDescription');
             $table->timestamps();

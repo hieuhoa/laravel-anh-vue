@@ -15,14 +15,14 @@ class CreateEmployessTable extends Migration
     {
         Schema::create('employees', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('employeeNumber')->unidue();
-            $table->string('lastName');
-            $table->string('firstName');
+            $table->integer('employee_number')->unidue();
+            $table->string('last_name');
+            $table->string('first_name');
             $table->string('extension');
             $table->string('email', 100);
-            $table->string('officeCode',50);
-            $table->string('reportsTo',50);
-            $table->string('jobTitle');
+            $table->string('office_code',50);
+            $table->string('reports_to',50);
+            $table->string('job_title');
             $table->timestamps();
         });
     }

@@ -17,11 +17,11 @@ class CreateUsersTable extends Migration
             $table->increments('officecode');
             $table->string('city');
             $table->string('phone');
-            $table->string('addressLine1');
-            $table->string('addressLine2');
+            $table->string('address_line1');
+            $table->string('address_line2');
             $table->string('state');
             $table->string('country');
-            $table->string('postalCode');
+            $table->string('postal_code');
             $table->string('territory');
             $table->timestamps();
         });
