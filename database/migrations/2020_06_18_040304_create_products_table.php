@@ -22,7 +22,7 @@ class CreateProductsTable extends Migration
             $table->string('product_vendor');
             $table->string('product_description',50);
             $table->string('quanitily_inStock',50);
-            $table->integer('buy_price');
+            $table->float('buy_price');
             $table->string('MSRP');
             $table->timestamps();
         });

@@ -4,15 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 //use Faker\Generator as Faker;
-
+//use App\Models;
 class Employee extends Model
 {
 
     protected $table='employees';
     //protected $dataFormat='u';
 
-const CREATED_AT = 'creation_date';
-const UPDATED_AT = 'last_update';
+//const CREATED_AT = 'creation_date';
+//const UPDATED_AT = 'last_update';
 
 
 

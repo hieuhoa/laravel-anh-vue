@@ -10,8 +10,8 @@ class Payment extends Model
 protected $table ='payments';
 
 protected $fillabe = [
-    'customeNumber',
-    'paymentDate',
+    'custome_number',
+    'payment_date',
     'amount',
 ];
 
