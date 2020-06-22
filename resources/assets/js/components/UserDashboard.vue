@@ -26,8 +26,10 @@
             }
         },
         methods:{
-            childrenSelectUser(user){
-                //console.log(user)
+            childrenSelectUser(user,number,string){
+                console.log(user)
+                console.log(number)
+                console.log(string)
                 this.userSelectedFromChild =user
             }
         }

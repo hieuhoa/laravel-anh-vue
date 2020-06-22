@@ -22,12 +22,14 @@
     export default {
         data(){
             return {
-                usersData:data  //show data;
+                usersData:data,
+                number:1410,
+                string:'MTD'  //show data;
             }
         },
         methods: {
             selectUser(user){
-                this.$emit('userSelected',user)
+                this.$emit('userSelected',user,this.number,this.string)
             }
         }
 

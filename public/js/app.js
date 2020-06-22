@@ -45408,8 +45408,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-        childrenSelectUser: function childrenSelectUser(user) {
-            //console.log(user)
+        childrenSelectUser: function childrenSelectUser(user, number, string) {
+            console.log(user);
+            console.log(number);
+            console.log(string);
             this.userSelectedFromChild = user;
         }
     }
@@ -45584,13 +45586,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            usersData: __WEBPACK_IMPORTED_MODULE_0__data_json___default.a //show data;
+            usersData: __WEBPACK_IMPORTED_MODULE_0__data_json___default.a,
+            number: 1410,
+            string: 'MTD' //show data;
         };
     },
 
     methods: {
         selectUser: function selectUser(user) {
-            this.$emit('userSelected', user);
+            this.$emit('userSelected', user, this.number, this.string);
         }
     }
     // $emit choose object in DASH -> UserDashboard.vue
