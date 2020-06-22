@@ -45400,6 +45400,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         ListUser: __WEBPACK_IMPORTED_MODULE_0__ListUser_vue___default.a,
         UserDetail: __WEBPACK_IMPORTED_MODULE_1__UserDetail_vue___default.a
     },
+    // Choose ListUser in Dash
     data: function data() {
         return {
             userSelectedFromChild: {}
@@ -45412,6 +45413,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.userSelectedFromChild = user;
         }
     }
+    //    from dashboard in UserDetail
 
 });
 
@@ -45582,7 +45584,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            usersData: __WEBPACK_IMPORTED_MODULE_0__data_json___default.a
+            usersData: __WEBPACK_IMPORTED_MODULE_0__data_json___default.a //show data;
         };
     },
 
@@ -45591,6 +45593,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.$emit('userSelected', user);
         }
     }
+    // $emit choose object in DASH -> UserDashboard.vue
 
 });
 

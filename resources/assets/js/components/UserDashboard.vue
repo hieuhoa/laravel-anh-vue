@@ -10,7 +10,7 @@
        </div>
     </div>
 </template>
-
+<!-- ative event chid is name event child = dad funtion  -->
 <script>
     import ListUser from './ListUser.vue'
     import UserDetail from './UserDetail.vue'
@@ -19,6 +19,7 @@
             ListUser,
             UserDetail
         },
+        // Choose ListUser in Dash
         data(){
             return {
                 userSelectedFromChild:{}
@@ -32,6 +33,7 @@
         }
 
     }
+//    from dashboard in UserDetail
 </script>
 
 <style lang="scss" scoped>

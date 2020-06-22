@@ -7,22 +7,22 @@
                 <th>DOB</th>
             </thead>
             <tbody>
-                <tr v-for="user in usersData">
+                <tr v-for="user in usersData"> 
                     <td><a @click="selectUser(user)">{{ user.name.title }} - {{ user.name.last }} {{ user.name.first }}</a></td>
                     <td>{{ user.location.city }}</td>
                     <td>{{ user.dob.date }}</td>
                 </tr>
             </tbody>
-        </table> 
+        </table>                             
     </div>
 </template>
-
+                                                        <!--Get data  show view -->
 <script>
     import data from './data.json'
     export default {
         data(){
             return {
-                usersData:data
+                usersData:data  //show data;
             }
         },
         methods: {
@@ -32,6 +32,7 @@
         }
 
     }
+    // $emit choose object in DASH -> UserDashboard.vue
 </script>
 
 <style lang="scss" scoped>
