@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
+use App\Models\Oderdetail;
 class OderdetailTableSeeder extends Seeder
 {
     /**
@@ -12,5 +12,6 @@ class OderdetailTableSeeder extends Seeder
     public function run()
     {
         //
+        factory(Oderdetail::class , 10)->create();
     }
 }
