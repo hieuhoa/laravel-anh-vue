@@ -17,7 +17,7 @@ class ModefyProductlinesTable extends Migration
             //
             //$table->string('name', 50)->change();
           // $table->string('product_line')->unique();
-            //$table->foreign('product_line')->references('id')->on('productlines');
+           // $table->foreign('product_line')->references('id')->on('productlines');
         });
     }
 
