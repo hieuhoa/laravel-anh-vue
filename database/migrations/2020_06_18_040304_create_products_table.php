@@ -24,6 +24,7 @@ class CreateProductsTable extends Migration
             $table->string('quanitily_inStock',50);
             $table->float('buy_price');
             $table->string('MSRP');
+            //$table->foreign('product_line')->references('id')->on('productlines');
             $table->timestamps();
         });
     }
