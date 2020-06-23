@@ -21,7 +21,7 @@ window.Vue = require('vue');
 //     el: '#app'
 // });
  
-Vue.component('user-dashboard', require('./components/UserDashboard.vue'));
+Vue.component('test', require('./components/ChangeName.vue'));
 const app = new Vue({
     el: '#app'
 });

@@ -9,7 +9,7 @@
     </head>
     <body>
         <div id="app">
-            <user-dashboard></user-dashboard>
+            <test></test>
         </div>
 
          <script src="{{ mix('js/app.js') }}"></script> 
