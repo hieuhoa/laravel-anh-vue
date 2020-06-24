@@ -11,7 +11,7 @@ class Productline extends Model
 
 
 
-protected $fillable =[
+    protected $fillable =[
     'textDescription',
     'htmlDescription'
 
@@ -21,6 +21,7 @@ protected $fillable =[
 {
     return $this->hasMany(Product::class,'product_line');
 }
+
 //     public function oderdetails()
 // {
 //     return $this->belongsToMany('App\Models\Oderdetail');

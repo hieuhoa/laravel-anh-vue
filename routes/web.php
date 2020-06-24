@@ -20,6 +20,18 @@ Route::get('/hello', function () {
 Route::get('/user',function(){
     return "chao user";
 });
-Route::get('/array','HomeController@showWelcome');
+Route::get('/data',function(){
+    $productlines= App\Models\Productline::all();
+
+    foreach ($productlines as $productline ) {
+        echo "<pre>";
+        echo $productline->products;
+        echo "</pre>";
+        
+        // foreach ($productline as) {
+        //     # code...
+        // }
+    }
+});
 
 //Route::view('/test','welcome')

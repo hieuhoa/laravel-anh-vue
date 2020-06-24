@@ -16,21 +16,18 @@ class Oderdetail extends Model
         'orderLine_number',
     ];
     
-    protected function productlines()
+    protected function products()
 {
-    return $this->hasOne(Productline::class);
+    return $this->belongsToMany(Product::class,'products_codes');
 }
+    protected function product(){
+    return $this->hasOne(Product::class,'products_codes');
+    }       
+
     protected function oders()
 {
     return $this->hasOne(Oder::class);
 }
     
-//     protected function products()
-// {
-//     return $this->hasMany(Product::class);
-// }
-//     protected function oders()
-// {
-//     return $this->hasMany(oders::class);
-// }   
+
 }

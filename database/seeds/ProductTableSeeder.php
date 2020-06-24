@@ -11,6 +11,6 @@ class ProductTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(Product::class,10)->create();
+        factory(Product::class,25)->create();
     }
 }
