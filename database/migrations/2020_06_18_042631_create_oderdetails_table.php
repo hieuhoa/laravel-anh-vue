@@ -15,7 +15,8 @@ class CreateOderdetailsTable extends Migration
     {
         Schema::create('oderdetails', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('order_number')->unique();
+            $table->string('product_code');
+            $table->string('order_number');
             $table->string('quantily_odered',50);
             $table->integer('price_each');
             $table->string('orderline_number');

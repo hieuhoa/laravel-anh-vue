@@ -16,6 +16,15 @@ protected $fillable =[
     'htmlDescription'
 
 ];
+
+    protected function products()
+{
+    return $this->hasMany(Product::class,'product_line');
+}
+//     public function oderdetails()
+// {
+//     return $this->belongsToMany('App\Models\Oderdetail');
+// }
 protected $hidden =[
     
 ];

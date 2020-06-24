@@ -6,7 +6,7 @@ $factory->define(Product::class, function (Faker $faker) {
     return [
         'products_codes'=>$faker->unique()->numberBetween('1','1000'),
         'product_name'=> $faker->name,
-        'product_line'=> $faker->unique()->numberBetween('1','1000'),
+        'product_line'=> App\Models\Productline::all()->random()->id,
         'product_scale'=> $faker->name,
         'product_vendor' => $faker->unique()->name,
         'product_description'=> $faker->text($maxNbChars=20),

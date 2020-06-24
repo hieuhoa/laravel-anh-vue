@@ -12,6 +12,6 @@ class ProductlineTableSeeder extends Seeder
     public function run()
     {
         //
-        //factory(App\Models\Productline::class,10)->create();
+        factory(App\Models\Productline::class,10)->create();
     }
 }

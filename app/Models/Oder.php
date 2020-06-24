@@ -18,5 +18,16 @@ class Oder extends Model
         'comments',
         'customer_number',
     ];
-
+    protected function oderdetails() {
+        return $this->hasMany(Odedetail::class);
+    }
+    protected function customers() {
+        return $this->hasOne(Customer::class);
+    }
+    //     public function employees() {
+    //     return $this->belongsToMany(Employee::class);
+    // }
+    // public function salesRepToCust() {
+    //     return $this->hasMany(Customer::class, 'salesRepCustomerId');
+    // }
 }

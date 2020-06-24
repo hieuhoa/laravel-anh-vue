@@ -20,7 +20,12 @@ protected $fillabe = [
     'territory',
 
  ];
-
+ 
+ protected function employees()
+ {
+     return $this->hasMany(Employee::class);
+ }
+ 
 
 
 }

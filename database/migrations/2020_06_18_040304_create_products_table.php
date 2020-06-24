@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->integer('products_codes')->unique();
             $table->string('product_name');
-            $table->string('product_line')->unique();
+            $table->string('product_line');
             $table->string('product_scale');
             $table->string('product_vendor');
             $table->string('product_description',50);

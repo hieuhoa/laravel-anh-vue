@@ -15,5 +15,10 @@ protected $fillabe = [
     'amount',
 ];
 
+    protected function customers()
+{
+    return $this->hasOne(Customer::class);
+}
+
 
 }

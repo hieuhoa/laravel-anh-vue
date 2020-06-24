@@ -19,15 +19,22 @@ protected $fillable =[
     'customersLastName',
     'customersFirstName',
     'phone',
-
-
-
-
 ];
-protected $hidden =[
-    
+    protected function oders()
+{
+    return $this->hasMany(Oder::class);
+}
+    protected function employees()
+{
+    return $this->hasMany(Employee::class);
+}
+    protected function payments()
+{
+    return $this->hasMany(Payment::class);
+}
 
 
-];
+protected $hidden =[];
+
 
 }

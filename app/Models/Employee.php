@@ -28,6 +28,21 @@ protected $fillable =[
 
 
 ];
+
+
+//     protected function orders()
+// {
+//     return $this->belongsToMany(Order::class);
+// }
+
+    protected function customers()
+{
+    return $this->hasMany(Customer::class);
+}
+    protected function offices()
+{
+    return $this->hasOne(Office::class);
+}       
 protected $hidden =[
    
 
