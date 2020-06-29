@@ -44,14 +44,14 @@ use Illuminate\Support\Facades\Route;
 // });
 
 // Route::get('/contact','UserController@form');
-// Route::post('users','UserController@store')
-// ->name('confim');
+// // Route::post('users','UserController@store')
+// // ->name('confim');
 
 
 // Route::get('/update','UserController@wupdate');
-// Route::put('users','UserController@update');
+// // Route::put('users','UserController@update');
 
-
+// Route::resource('/product','ProductController');
 
 
 
@@ -61,6 +61,6 @@ use Illuminate\Support\Facades\Route;
 // Route::get('register','RegisterController@register');
 
 Route::resources([
-    'user' => 'UserController',
+    'product' => 'ProductController',
     // 'posts' => 'PostController'
 ]);

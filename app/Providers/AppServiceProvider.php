@@ -6,7 +6,11 @@ use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
+    // protected $policies= [
+    //     'App\Model'=>'App\Policies\ModelPolicy',
+    // ];
     /**
+     * 
      * Bootstrap any application services.
      *
      * @return void
@@ -14,6 +18,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        // $this->registerPolicies();
+        // Passport::routes();
     }
 
     /**
